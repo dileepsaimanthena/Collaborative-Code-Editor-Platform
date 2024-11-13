@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collaborative Code Room</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <div class="room-container">
+    <header class="room-header">
+      <h2>Code Editor - Room: <%= roomName %></h2>
+      <select id="languageSelector">
+        <option value="javascript">JavaScript</option>
+        <option value="python">Python</option>
+        <option value="java">Java</option>
+      </select>
+    </header>
+    
+    <div class="editor-container">
+      <div id="editor"></div>
+    </div>
+
+    <aside class="file-sidebar">
+      <h3>Files</h3>
+      <ul id="fileList"></ul>
+      <button id="createFileButton">Add File</button>
+    </aside>
+  </div>
+
+  <script src="/js/editor.js"></script>
+</body>
+</html>
