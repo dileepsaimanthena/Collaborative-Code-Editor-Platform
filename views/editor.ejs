@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collaborative Code Editor</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <div class="editor-container">
+    <select id="languageSelector">
+      <option value="javascript">JavaScript</option>
+      <option value="python">Python</option>
+      <option value="java">Java</option>
+      <!-- Add more languages as needed -->
+    </select>
+    
+    <textarea id="editor" placeholder="Start coding..."></textarea>
+  </div>
+  
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/js/editor.js"></script>
+</body>
+</html>
